@@ -1,0 +1,7 @@
+body {
+  color: red; }
+  body div {
+    color: green; }
+  body h2 {
+    text-align: center;
+    color: black; }
