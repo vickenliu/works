@@ -3,6 +3,7 @@
 }
 #info{
 	width: 30%;
+	height: 100vh;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -49,8 +50,9 @@
 	width: 70%;
 }
 #ngView{
+	width: 100%;
 	.row{
-		margin: auto 5px;
+		margin: 5px auto;
 	}
 	.card{
 		padding: 2px;
@@ -92,7 +94,6 @@
 	}
 	img{
 		max-width: 100%;
-		max-height: 80vh;
 		margin-top: 20px;
 	}
 	p{

@@ -3,6 +3,7 @@
 
 #info {
   width: 30%;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -42,17 +43,18 @@
 #pageArea {
   width: 70%; }
 
-#ngView .row {
-  margin: auto 5px; }
-
-#ngView .card {
-  padding: 2px; }
-  #ngView .card .thumbnail {
-    margin-bottom: 0px;
-    padding: 0px; }
-    #ngView .card .thumbnail span {
-      display: block;
-      font-size: 90%; }
+#ngView {
+  width: 100%; }
+  #ngView .row {
+    margin: 5px auto; }
+  #ngView .card {
+    padding: 2px; }
+    #ngView .card .thumbnail {
+      margin-bottom: 0px;
+      padding: 0px; }
+      #ngView .card .thumbnail span {
+        display: block;
+        font-size: 90%; }
 
 .classify .btn-group {
   margin: 10px 30px; }
@@ -74,7 +76,6 @@
     display: inline-block; }
   .project img {
     max-width: 100%;
-    max-height: 80vh;
     margin-top: 20px; }
   .project p {
     text-align: right;

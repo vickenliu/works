@@ -99,7 +99,7 @@ app.directive('myName',function(){
     	},
 		templateUrl:'views/myName.html',
 		link: function(){
-			setTimeout(mason, 50);
+			setTimeout(mason, 100);
 			function mason(){
 				console.log('ex');
 				$('div.grid').masonry({
