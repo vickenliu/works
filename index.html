@@ -105,9 +105,13 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<script type="text/javascript">
 	$(document).ready(function(){
-    $('.cancel').click(function(){
-      $('#menu').click();
-    });
+      
+      $('.cancel').click(function(){
+            if($('.navbar-toggle').css('display')==='block'){
+                $('#menu').click();
+            }
+      });
+ 
 	});
 
 	</script>
