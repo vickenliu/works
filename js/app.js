@@ -74,7 +74,7 @@ historys=[{
 	active:'Full-stack Development',
 	img:'img/codeschool.png'
 },{
-	year:'2015.7-2009.6',
+	year:'2005.7-2009.6',
 	school:'China Three Gorges University',
 	active:'Engineering of Automation',
 	img:'img/ctgu.png'
