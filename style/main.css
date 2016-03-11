@@ -1,7 +1,133 @@
-body {
-  color: red; }
-  body div {
-    color: green; }
-  body h2 {
+* {
+  box-sizing: border-box; }
+
+#info {
+  width: 30%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #f9c00c; }
+  #info div {
+    margin: 0 auto;
+    margin-top: 70px;
     text-align: center;
-    color: black; }
+    padding: 10px; }
+    #info div strong {
+      display: block;
+      font-size: 1.9em;
+      color: white;
+      margin-top: 15px; }
+    #info div p {
+      font-size: 1.5em;
+      color: #777;
+      margin-top: 20px;
+      padding: 5px; }
+  #info img {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    max-width: 100%x; }
+
+#social {
+  display: block;
+  margin: 0px auto;
+  text-align: center; }
+  #social a {
+    display: inline-block;
+    margin-left: 5px; }
+    #social a img {
+      max-width: 45px; }
+
+#pageArea {
+  width: 70%; }
+
+#ngView .row {
+  margin: auto 5px; }
+
+#ngView .card {
+  padding: 2px; }
+  #ngView .card .thumbnail {
+    margin-bottom: 0px;
+    padding: 0px; }
+    #ngView .card .thumbnail span {
+      display: block;
+      font-size: 90%; }
+
+.classify .btn-group {
+  margin: 10px 30px; }
+
+.thumbnail {
+  background-color: #e1eef6; }
+  .thumbnail .caption {
+    padding: 0px;
+    text-align: center; }
+
+.project {
+  width: 80%;
+  display: block;
+  margin: 0px auto;
+  text-align: center; }
+  .project .title h2 {
+    display: inline-block; }
+  .project .title small {
+    display: inline-block; }
+  .project img {
+    max-width: 100%;
+    max-height: 80vh;
+    margin-top: 20px; }
+  .project p {
+    text-align: right;
+    font-size: 1.5em;
+    margin-top: 20px; }
+
+.history {
+  background-color: #f2e9e1;
+  margin-top: 10px; }
+
+.school {
+  text-align: left; }
+  .school .lineup {
+    margin: 10px auto; }
+    .school .lineup h3, .school .lineup h4 {
+      display: inline;
+      margin: 5px; }
+
+@media (max-width: 480px) {
+  #info {
+    width: 100%;
+    position: static; }
+    #info div {
+      margin-top: 20px;
+      padding: 5px; }
+      #info div strong {
+        font-size: 1.6em;
+        margin-top: 13px; }
+      #info div p {
+        font-size: 1.3em;
+        margin-top: 15px; }
+    #info img {
+      max-width: 50%; }
+  #social {
+    margin-bottom: 20px; }
+  #pageArea {
+    width: 100%; }
+  .project {
+    width: 100%; }
+    .project img {
+      margin: 0 auto;
+      max-height: 100%; }
+    .project p {
+      text-align: center; }
+    .project .nofloat {
+      width: 100%;
+      margin-bottom: 20px; }
+    .project .imgcontent {
+      clear: both; }
+  .history .schoollogo img {
+    margin-top: 10px;
+    max-width: 20%; }
+  .school .lineup {
+    margin: 5px auto; }
+    .school .lineup h3 {
+      font-size: 1.4em; } }

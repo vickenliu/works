@@ -1,0 +1,21 @@
+<div ng-controller='educationController' class='container'>
+	<div class='project row'>
+			<h2>Background</h2>
+		<div class='col-md-9 col-md-offset-2 history'  ng-repeat='history in historys'>
+			<div class='schoollogo col-md-2'>
+				<img ng-src={{history.img}} class='img-responsive'>
+			</div>
+			<div class='school col-md-9'>
+				<div class='lineup'>
+					<h3>Provider: </h3><h4>{{history.school}}</h4>
+				</div>
+				<div class='lineup'>
+					<h3>Activity: </h3><h4>{{history.active}}</h4>
+				</div>
+				<div class='lineup'>
+					<h3>Peoriod: </h3><h4>{{history.year}}</h4>
+				</div>	
+			</div>
+		</div>
+	</div>
+</div>

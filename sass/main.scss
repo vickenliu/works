@@ -1,10 +1,188 @@
-body{
-	color:red;
+*{
+	box-sizing:border-box;
+}
+#info{
+	width: 30%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: #f9c00c;
 	div{
-		color:green;
-	}
-	h2{
+		margin: 0 auto;
+		margin-top: 70px;
 		text-align: center;
-		color: black;
+		padding: 10px;
+		strong{
+			display: block;
+			font-size: 1.9em;
+			color: white;
+			margin-top: 15px;
+		}
+		p{
+			font-size: 1.5em;
+			color: #777;
+			margin-top: 20px;
+			padding: 5px;
+		}
 	}
+	img{
+		display: block;
+		margin: 0 auto;
+		width: 250px;
+		max-width: 100%x;
+	}
+}
+#social{
+	display: block;
+	margin: 0px auto;
+	text-align: center;
+	a{
+		display: inline-block;
+		margin-left: 5px;
+		img{
+			max-width: 45px;
+		}
+	}
+}
+#pageArea{
+	width: 70%;
+}
+#ngView{
+	.row{
+		margin: auto 5px;
+	}
+	.card{
+		padding: 2px;
+		.thumbnail{
+			margin-bottom: 0px;
+			padding: 0px;
+			span{
+				display: block;
+				font-size: 90%;
+			}
+		}
+	}
+}
+.classify{
+	.btn-group{
+		margin:10px 30px;
+	}
+}
+.thumbnail{
+	background-color: #e1eef6;
+	.caption{
+		padding:0px;
+		text-align: center;
+	}
+}
+
+.project{
+	width: 80%;
+	display: block;
+	margin: 0px auto;
+	text-align: center;
+	.title{
+		h2{
+			display: inline-block;
+		}
+		small{
+			display: inline-block;
+		}
+	}
+	img{
+		max-width: 100%;
+		max-height: 80vh;
+		margin-top: 20px;
+	}
+	p{
+		text-align: right;
+		font-size: 1.5em;
+		margin-top: 20px;
+	}
+}
+
+.history{
+	background-color: #f2e9e1;
+	margin-top: 10px;
+}
+.school{
+	text-align: left;
+	
+	.lineup{
+		margin: 10px auto;
+		h3,h4{
+			display: inline;
+			margin: 5px;
+		}
+
+	}
+
+}
+
+@media (max-width: 480px){
+	#info{
+	width: 100%;
+	position: static;
+	div{
+		margin-top: 20px;
+		padding: 5px;
+		strong{
+			font-size: 1.6em;
+			margin-top: 13px;
+		}
+		p{
+			font-size: 1.3em;
+			margin-top: 15px;
+		}
+	}
+	img{
+		max-width: 50%;
+	}
+}
+#social{
+	margin-bottom: 20px;
+}
+#pageArea{
+	width: 100%;
+}
+
+.project{
+	width: 100%;
+	img{
+		margin: 0 auto;
+		max-height: 100%;
+
+	}
+	p{
+		text-align: center;
+	}
+	.nofloat{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.imgcontent{
+		clear:both;
+	}
+}
+
+.history{
+	.schoollogo img{
+		margin-top: 10px;
+		max-width: 20%;
+	}
+
+}
+.school{
+	
+	.lineup{
+		margin: 5px auto;
+		h3{
+			font-size: 1.4em;
+		}
+
+	}
+
+}
+
 }

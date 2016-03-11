@@ -1,0 +1,14 @@
+<div ng-controller='showController' class='container'>
+	<div class='project row'>
+		<div clsss='col-md-12 title'>
+			<h2>{{project.name}}</h2><small class="label" ng-class="{'label-success': project.type=='personal' , 'label-info': project.type=='commercial'}">{{project.type}}</small>
+		</div>
+		<div class='col-md-6'>
+			<p>{{project.info}}</p>
+			<a href="{{project.link}}" class='btn btn-success pull-right nofloat'>Visit Live Site</a>
+		</div>
+		<div class='col-md-6 imgcontent'>
+			<img ng-src={{project.img}} class="img-responsive">
+		</div>
+	</div>
+</div>

@@ -1,0 +1,11 @@
+
+				<div class='row grid' >
+					<div class="col-sm-6 col-md-3 grid-item" ng-repeat='project in projects'>
+					    <div class="thumbnail">
+					      	<a href="#/projects/{{project.id}}"><img ng-src={{project.img}} alt="..."></a>
+					     	<div class="caption">
+					        	<h4>{{project.name}}</h4><span class="label pull-right" ng-class="{'label-success': project.type=='personal' , 'label-info': project.type=='commercial'}">{{project.type}}</span>
+					     	</div>
+					    </div>
+					</div>
+				</div>
