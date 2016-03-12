@@ -122,3 +122,4 @@ app.controller('showController',function($scope,$routeParams){
 app.controller('educationController',function($scope){
 	$scope.historys=historys;
 });
+
