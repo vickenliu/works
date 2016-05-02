@@ -66,7 +66,7 @@ types=['personal','commercial'],
 historys=[{
 	year:'2016.1-2016.5',
 	school:'Enspiral Dev Academy',
-	active:'Web Development',
+	active:'Full-stack Web Development',
 	img:'img/dev.png'
 },{
 	year:'2015.10-present',
@@ -99,15 +99,7 @@ app.directive('myName',function(){
     	},
 		templateUrl:'views/myName.html',
 		link: function(){
-			setTimeout(mason, 100);
-			function mason(){
-				console.log('ex');
-				$('div.grid').masonry({
-				  // options
-				  itemSelector: 'div.grid-item',
-				  columnWidth: 'div.grid-item'
-				});
-			}
+			
 		}
 	};
 });
@@ -122,4 +114,3 @@ app.controller('showController',function($scope,$routeParams){
 app.controller('educationController',function($scope){
 	$scope.historys=historys;
 });
-
