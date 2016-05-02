@@ -51,7 +51,7 @@ var projects=[{
 	id:6,
 	name:'SHARE WITH ME',
 	info:"I had an idea to recieve others' sharing with me, I created this App with Ruby on Rails to play around and inspire peopele to contact with me.",
-	link:'www.vickenliu.com',
+	link:'share-with-me.herokuapp.com',
 	img:'img/rails.png',
 	type:'commercial'
 },{

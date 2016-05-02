@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-angular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vickenliu/works.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vickenliu/works/issues"
+  },
+  "homepage": "https://github.com/vickenliu/works#readme",
+  "devDependencies": {
+    "superagent": "^1.8.2"
+  }
+}
