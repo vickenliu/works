@@ -25,7 +25,6 @@
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 <!-- angular js -->
@@ -59,7 +58,7 @@
   				<a href="https://www.linkedin.com/in/vicken-liu-29a06288" target='_blank'><img src="img/linkin.png"></a>
   			</div>
   		</div>
-  		
+
   	</div>
   	<div id='pageArea' class='pull-right'>
 		<nav class="navbar navbar-default">
@@ -105,13 +104,19 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<script type="text/javascript">
 	$(document).ready(function(){
-      
       $('.cancel').click(function(){
             if($('.navbar-toggle').css('display')==='block'){
                 $('#menu').click();
             }
       });
- 
+      setTimeout(mason, 400);
+			function mason(){
+				$('div.grid').masonry({
+				  // options
+				  itemSelector: 'div.grid-item',
+				  columnWidth: 'div.grid-item'
+				});
+			}
 	});
 
 	</script>

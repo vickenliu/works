@@ -13,11 +13,18 @@ var app=angular.module('portfolio',['ngRoute'])
 });
 
 var projects=[{
+	id:8,
+	name:'Meowtown',
+	info:'This was a school challenge for server-side scripting, I added database and handle-bars with server redering to show my interested of this project.It covers : backend server, database, server-side rendering',
+	link:'cat-city.herokuapp.com',
+	img:'img/cat.png',
+	type:'personal'
+},{
 	id:5,
-	name:'Vicken Liu | Portfolio',
-	info:'Version 3 personal portfolio,Try to squeeze all the information on a single page. Started from scratch,Try to impliment more new stuff within the code.',
-	link:'www.vickenliu.com',
-	img:'img/portfolio.png',
+	name:'Re-Reddit',
+	info:'This was originally a group full-stack project of 3 people in 2 days,I brought it furture to how it is now over the following saturday. We used react+redux ,facebook oauth log-in, backend server & database. It has all the feature of reddit.',
+	link:'re-reddit.herokuapp.com',
+	img:'img/reddit.png',
 	type:'personal'
 },{
 	id:1,
@@ -33,13 +40,6 @@ var projects=[{
 	link:'www.tlgay.com',
 	img:'img/tl.png',
 	type:'commercial'
-},{
-	id:3,
-	name:'Personal Website',
-	info:'Version1 personal portfolio refreshing with new technichs implementation',
-	link:'www.vickenliu.com/V1',
-	img:'img/bgcn2.jpg',
-	type:'personal'
 },{
 	id:4,
 	name:'Portfolio | App',
@@ -66,7 +66,7 @@ types=['personal','commercial'],
 historys=[{
 	year:'2016.1-2016.5',
 	school:'Enspiral Dev Academy',
-	active:'Web Development',
+	active:'Full-stack Web Development',
 	img:'img/dev.png'
 },{
 	year:'2015.10-present',
@@ -99,15 +99,7 @@ app.directive('myName',function(){
     	},
 		templateUrl:'views/myName.html',
 		link: function(){
-			setTimeout(mason, 100);
-			function mason(){
-				console.log('ex');
-				$('div.grid').masonry({
-				  // options
-				  itemSelector: 'div.grid-item',
-				  columnWidth: 'div.grid-item'
-				});
-			}
+
 		}
 	};
 });
