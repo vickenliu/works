@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/vickenliu/works#readme",
   "devDependencies": {
+    "gulp-uglify": "^1.5.3",
     "superagent": "^1.8.2"
   }
 }
