@@ -1,10 +1,11 @@
 <div ng-controller='showController' >
 	<div class='project row'>
 		<div clsss='col-md-12 title'>
-			<h2>{{project.name}}</h2><small class="label" ng-class="{'label-success': project.type=='personal' , 'label-info': project.type=='commercial'}">{{project.type}}</small>
+			<h2>{{project.name}}</h2><small class="label">{{project.type}}</small>
 		</div>
 		<div class='col-md-6'>
 			<p>{{project.info}}</p>
+			<a href="#/projects" class='btn btn-danger pull-right nofloat'>Back to All</a>
 			<a href="http://{{project.link}}" class='btn btn-success pull-right nofloat' target='_blank'>Visit Live Site</a>
 		</div>
 		<div class='col-md-6 imgcontent'>

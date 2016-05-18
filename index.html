@@ -35,7 +35,7 @@
   <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
 
 
-	<script type="text/javascript" src='app.js'></script>
+	<script type="text/javascript" src='js/app.js'></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -114,6 +114,9 @@
         mason()
       })
       $(document).on('click','.navbar-brand',function(){
+        mason()
+      })
+      $(document).on('click','.btn',function(){
         mason()
       })
 			function mason(){
